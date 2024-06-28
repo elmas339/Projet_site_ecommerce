@@ -1,0 +1,170 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins" , sans-serif;
+	transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+.link {
+	margin: 20px;
+	width: fit-content;
+	position: relative;
+	text-decoration: 0;
+	background-color: cornflowerblue;
+	color: #fff;
+	padding: 10px 25px;
+	border-radius: 6px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    height: 80px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.navbar{
+	 display: flex;
+	 align-items: center;
+	 padding: 20px;
+}
+.logo img{
+	margin-top: 87px;
+	width: 200px;
+}
+nav{
+	flex: 1;
+	text-align: right ;
+}
+ul{
+	display: inline-block; 
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: #555;
+}
+header button {
+    background-color: #ea1f33;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 25px;
+}
+.container{
+	max-width: 1300px;
+	margin: 20px auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.produits{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.row{
+	/* background-color: #ea1f33; */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 10%;
+	padding: 16px 0;
+}
+.col-2{ 
+	 
+	margin-bottom: 16px;
+}
+.col-2 img{
+	width: 400px;
+}
+#home{
+	margin-top: 50px;
+	height: calc(100vh - 50px);
+	padding: 0 8%;
+	display: felx;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+::-webkit-scrollbar{
+	width: 8px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #ea1f33;
+}
+#home.col-2 a{
+	font-size: 35px;
+	margin-bottom: 10px;
+	background-color: #ea1f33;
+} */
+/*     */
+/* Styles pour le tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Styles pour rendre le tableau responsive */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Styles pour les écrans plus petits (comme les téléphones) */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+    }
+    .table {
+        width: 100%;
+    }
+    .table thead {
+        display: none; /* Masquer l'en-tête du tableau sur les petits écrans */
+    }
+    .table tr {
+        border-bottom: 1px solid #ccc; /* Ajouter des bordures entre les lignes */
+        margin-bottom: 10px;
+    }
+    .table td {
+        display: block; /* Afficher les cellules en bloc pour les disposer verticalement */
+        text-align: center;
+    }
+    .table td::before {
+        /* Ajouter du contenu avant chaque cellule pour afficher les titres */
+        content: attr(data-title);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
